@@ -37,12 +37,10 @@ return (
           <div className="card shadow-sm border-0">
             <div className="card-body p-4">
               
-              {/* Nagłówek drugiego stopnia z liczbą sekcji pochodzącą z długości tablicy */}
               <h2 className="card-title text-center mb-4 text-primary fw-bold">
                 Liczba sekcji: {sections.length}
               </h2>
 
-              {/* Lista numerowana generowana automatycznie dla wszystkich elementów tablicy */}
               <div className="mb-4">
                 <h5 className="text-secondary fs-6 mb-2">Dostępne sekcje:</h5>
                 <ol className="list-group list-group-numbered">
@@ -54,10 +52,8 @@ return (
                 </ol>
               </div>
 
-              {/* Formularz zapisów do sekcji */}
               <form onSubmit={handleSubmit}>
                 
-                {/* Pole edycyjne dla Imienia i nazwiska */}
                 <div className="mb-3">
                   <label htmlFor="fullNameInput" className="form-label fw-semibold">
                     Imię i nazwisko:
@@ -73,7 +69,6 @@ return (
                   />
                 </div>
 
-                {/* Edycyjne pole numeryczne dla Numeru sekcji */}
                 <div className="mb-4">
                   <label htmlFor="sectionNumberInput" className="form-label fw-semibold">
                     Numer sekcji:
@@ -89,7 +84,6 @@ return (
                   />
                 </div>
 
-                {/* Przycisk Zapisz z klasami btn btn-primary */}
                 <div className="d-grid">
                   <button type="submit" className="btn btn-primary btn-lg">
                     Zapisz
